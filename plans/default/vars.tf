@@ -15,8 +15,8 @@ variable "agentDnsNamePrefix" {default = "k8sagent"}
 variable "agentCount" {default = "1"}
 variable "agentVMSize" {default = "Standard_D2_v2"}
 variable "linuxAdminUsername" {}
-variable "windowsAgentAdminUsername" {default = "labadmin"}
-variable "windowsAgentAdminPassword" {default = "Passw0rd123$"}
+variable "windowsAgentAdminUsername" {}
+variable "windowsAgentAdminPassword" {}
 variable "orchestratorType" {default = "Kubernetes"}
 variable "masterCount" {default = "1"}
 variable "sshRSAPublicKey" {}

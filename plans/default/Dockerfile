@@ -1,7 +1,5 @@
-############################################################
-# Dockerfile to build Balerion Terraform bootstrap container image
-
-############################################################
+# Dockerfile to build Balerion Terraform bootstrap container image  
+##################################################################
 
 # Set the base image
 FROM lkacr.azurecr.io/dev/gizmo:0.3.6
