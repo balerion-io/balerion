@@ -1,2 +1,1 @@
-secret.tfvars*
-env.list*
+secrets/
