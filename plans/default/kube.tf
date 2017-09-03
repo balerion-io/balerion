@@ -1,7 +1,11 @@
+# Create new Azure Resource Group deployment 
+
 resource "azurerm_resource_group" "balerion" {
   name     = "${var.my_resource_group}" // Injected from TF_VAR environment variable
   location = "${var.location}"
 }
+
+# Use ARM template deploymet terraform module
 
 resource "azurerm_template_deployment" "balerion" {
   name                = "${var.my_resource_group}"
@@ -26,11 +30,15 @@ provisioner "local-exec" {
     }
 
 provisioner "local-exec" {
-  command = "sleep 180"
+  command = "sleep 100"
     }
 
 provisioner "local-exec" {
   command = "az acs kubernetes get-credentials --resource-group=${var.my_resource_group} --name=containerservice-${var.my_resource_group}"
+    }
+
+provisioner "local-exec" {
+  command = "kubectl proxy"
     }
 
 provisioner "local-exec" {
