@@ -12,4 +12,3 @@ sed -i "s| myresourcegroup|$my_resource_group|g" /tmp/tfdeployment/vars.tf
 
 
 
- merge testing
