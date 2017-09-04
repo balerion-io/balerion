@@ -8,7 +8,7 @@ variable "tenant_id" {default = "72f988bf-86f1-41af-91ab-2d7cd011db47"}
 variable "spn_url" {default = "http://azure-cli-2017-08-26-05-25-55"}
 variable "location" {default = "West Europe"}
 variable "my_resource_group" {}
-variable "resourceName" {default}
+variable "resourceName" {}
 variable "dnsNamePrefix" {}
 variable "masterDnsNamePrefix" {default = "k8smaster"}
 variable "agentDnsNamePrefix" {default = "k8sagent"}
