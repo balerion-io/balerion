@@ -38,10 +38,6 @@ provisioner "local-exec" {
     }
 
 provisioner "local-exec" {
-  command = "kubectl proxy"
-    }
-
-provisioner "local-exec" {
   command = "kubectl run nginx --image=nginx"
     }         
 
