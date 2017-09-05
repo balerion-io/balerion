@@ -1,4 +1,4 @@
-# Dockerfile to build Balerion Terraform bootstrap container image  
+# Dockerfile for building Balerion Terraform bootstrap container image  
 ##################################################################
 
 # Set the base image
