@@ -30,7 +30,7 @@ provisioner "local-exec" {
     }
 
 provisioner "local-exec" {
-  command = "sleep 90"
+  command = "sleep 60"
     }
 
 provisioner "local-exec" {
