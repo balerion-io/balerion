@@ -38,7 +38,7 @@ provisioner "local-exec" {
     }
 
 provisioner "local-exec" {
-  command = "kubectl run nginx --image=nginx"
+  command = "run-parts /tmp/tfdeployment/k8s-scripts"
     }         
 
 provisioner "local-exec" {

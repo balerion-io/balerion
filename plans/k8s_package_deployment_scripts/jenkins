@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kubectl run jenkins --image=jenkins

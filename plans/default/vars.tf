@@ -1,5 +1,5 @@
-# Declare Azure variables#
-##########################
+# Declare Azure variables
+#########################
 
 variable "subscription_id" {default = "e73c1dbe-2574-4f38-9e8f-c813757b1786"}
 variable "client_id" {}
