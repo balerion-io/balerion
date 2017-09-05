@@ -31,11 +31,7 @@ provisioner "local-exec" {
 
 provisioner "local-exec" {
   command = "sleep 10"
-<<<<<<< HEAD
   }
-=======
-    }
->>>>>>> upstream/master
 
 provisioner "local-exec" {
   command = "az acs kubernetes get-credentials --resource-group=${var.my_resource_group} --name=containerservice-${var.my_resource_group}"
