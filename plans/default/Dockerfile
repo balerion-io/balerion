@@ -2,7 +2,7 @@
 ##################################################################
 
 # Set the base image
-FROM lkacr.azurecr.io/dev/gizmo:0.3.8
+FROM lkacr.azurecr.io/dev/gizmo:0.4.0
 
 # File Author / Maintainer
 MAINTAINER Lior Kamrat

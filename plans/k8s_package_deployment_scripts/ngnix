@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kubectl run nginx --image=nginx
