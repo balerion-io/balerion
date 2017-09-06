@@ -37,6 +37,7 @@ provisioner "local-exec" {
   command = "az acs kubernetes get-credentials --resource-group=${var.my_resource_group} --name=containerservice-${var.my_resource_group}"
     }
 
+# Run K8s applications deployment scripts using kubectl
 provisioner "local-exec" {
   command = "run-parts /tmp/tfdeployment/k8s_package_deployment_scripts"
     }         
