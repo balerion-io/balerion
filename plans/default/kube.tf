@@ -38,7 +38,7 @@ provisioner "local-exec" {
     }
 
 provisioner "local-exec" {
-  command = "run-parts /tmp/tfdeployment/k8s-scripts"
+  command = "run-parts /tmp/tfdeployment/k8s_package_deployment_scripts"
     }         
 
 provisioner "local-exec" {
