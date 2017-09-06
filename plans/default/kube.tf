@@ -38,6 +38,7 @@ provisioner "local-exec" {
     }
 
 # Run K8s applications deployment scripts using kubectl
+
 provisioner "local-exec" {
   command = "run-parts /tmp/tfdeployment/k8s-scripts"
     }         
