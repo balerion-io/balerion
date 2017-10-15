@@ -5,7 +5,7 @@
 FROM lkacr.azurecr.io/dev/gizmo:0.4.0
 
 # File Author / Maintainer
-MAINTAINER Lior Kamrat
+LABEL Lior Kamrat
 
 # Change working directory to where all the terraform and deployment files are
 WORKDIR /tmp/tfdeployment/
