@@ -2,7 +2,7 @@
 ##################################################################
 
 # Set the base image
-FROM lkacr.azurecr.io/dev/gizmo:0.4.0
+FROM gizmo:local
 
 # File Author / Maintainer
 LABEL Lior Kamrat
@@ -11,4 +11,4 @@ LABEL Lior Kamrat
 WORKDIR /tmp/tfdeployment/
 
 # Run the terraform plan to deploy K8s via Azure ARM template and the requested K8s apps
-#ENTRYPOINT ["/bin/bash", "-c", "terraform apply"]
+ENTRYPOINT ["/bin/bash", "-c", "terraform apply -auto-approve"]
